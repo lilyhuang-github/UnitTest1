@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "mathfuncs_r.h"
+#include "mathfuncs.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -13,7 +13,7 @@ namespace MathTestSuite
         TEST_METHOD(SquareTest)
         {
             double d = square(8.0);
-            Assert::AreEqual(64.0, d);
+            Assert::AreEqual(64.0, d); //asert/checks if they're equal
         }
 
         TEST_METHOD(CubeTest)
